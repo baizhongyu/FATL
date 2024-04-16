@@ -1,3 +1,5 @@
 # FETL
-The code for: Feature Enhancement-Based Transfer Learning for Few-Shot Sonar Image Classification
-The code will be opened as soon as possible.
+The source code of the paper: Side-Scan Sonar Image Recognition with Zero-Shot and Style Transfer.
+
+#
+The model code will be published soon.
