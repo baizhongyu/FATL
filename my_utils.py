@@ -102,21 +102,6 @@ class FeatureEnhancer(nn.Module):
 
 
 
-class FC(nn.Module):
-    def __init__(self, num_inputs, num_outputs):
-        super(FC, self).__init__()
-        self.fc = nn.Sequential(
-            nn.Linear(num_inputs, 512),
-            nn.ReLU(),
-            nn.Dropout(0.5),
-            nn.Linear(512, num_outputs)
-        )
-        #self.fc = nn.Linear(num_inputs, num_outputs, bias=True)
-
-    def forward(self, x):
-        y = self.fc(x.view(x.shape[0], -1))
-        return y
-
 '''
 Get fully connected layers
     @ num_in : number of input channels
