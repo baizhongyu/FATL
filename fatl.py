@@ -49,13 +49,13 @@ if __name__ == '__main__':
     backbone = args.backbone
     if dataset == 'KLSG':
         nb_classes = 2
-        subset_num = 6#####6
+        subset_num = 6
     elif dataset == 'NKSID':
         nb_classes = 8
         subset_num = 48
     elif dataset == 'FLSMDD':
         nb_classes = 10
-        subset_num = 7######7
+        subset_num = 7
     else:
         print(f'ERROR! DATASET {dataset} IS NOT EXIST!')
 
@@ -100,7 +100,7 @@ if __name__ == '__main__':
                         lr=lr, weight_decay=0.001)
 
     # finetuning model
-    num_epochs = 5#5
+    num_epochs = 10
 
     train(train_iter, val_iter, model, loss, optimizer, device, num_epochs)
 
@@ -120,7 +120,7 @@ if __name__ == '__main__':
     optimizer1 = optim.SGD(model.parameters(), lr=lr1)
     #scheduler = MultiStepLR(optimizer1, [20,30], gamma=0.5)
     scheduler = MultiStepLR(optimizer1, [20, 30], gamma=0.5)
-    num_epoch1 = 5#5
+    num_epoch1 = 20
 
     train_FE(train_iter, val_iter, model, FE, fco, loss, optimizer1, scheduler, device, num_epoch1)
     #train1(train_iter, val_iter, model, FE, fco, loss, optimizer1, device, num_epochs)
