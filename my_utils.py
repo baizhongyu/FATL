@@ -1,13 +1,5 @@
 # coding: utf-8
-"""
- ╦╔═╗╦═╗╦ ╦╔╗╔╔═╗╔═╗╦ ╦
- ║║ ║╠╦╝║║║║║║╠═╝╠═╣╚╦╝
-╚╝╚═╝╩╚═╚╩╝╝╚╝╩  ╩ ╩ ╩ 
-@time: 2022/04/02
-@file: my_utils.py                
-@author: Jorwnpay                    
-@contact: jwp@mail.nankai.edu.cn                                         
-"""  
+
 import os
 import random
 import time
