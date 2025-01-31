@@ -1,13 +1,5 @@
 # coding: utf-8
-"""
- ╦╔═╗╦═╗╦ ╦╔╗╔╔═╗╔═╗╦ ╦
- ║║ ║╠╦╝║║║║║║╠═╝╠═╣╚╦╝
-╚╝╚═╝╩╚═╚╩╝╝╚╝╩  ╩ ╩ ╩ 
-@time: 2022/04/02
-@file: betl.py                
-@author: Jorwnpay                    
-@contact: jwp@mail.nankai.edu.cn                                         
-"""                       
+                
 import torch
 from torch import optim
 import os
